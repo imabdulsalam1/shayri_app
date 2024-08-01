@@ -40,6 +40,8 @@ AppBar buildAppBar(String type,
 
 Widget globalContainerBtn(String title,
     {Color bgColor = Colors.red,
+      Color txtColor = Colors.black,
+      double fontSize = 16,
       double width = 120.0,
       double height = 40.0,
       double borderRadious = 30.0}) {
@@ -54,7 +56,7 @@ Widget globalContainerBtn(String title,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           reusableText(title,
-              fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+              fontWeight: FontWeight.bold, fontSize: fontSize, color: txtColor),
         ],
       ),
     ),

@@ -33,18 +33,29 @@ class DashboardBottomBar extends StatelessWidget {
                 ),
                 child: const Icon(Icons.home, size: 50, color: AppColors.welcomePurple)),
           ),
-          Container(
-              padding: const EdgeInsets.all(5),
-              decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(50),),color: Colors.white
-              ),
-              child: const Icon(Icons.format_quote_rounded, size: 50, color: AppColors.welcomePurple)),
+          GestureDetector(
+
+            onTap: (){
+              Navigator.pushNamed(context, "QuotesPage");
+            },
+
+            child: Container(
+                padding: const EdgeInsets.all(5),
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(50),),color: Colors.white
+                ),
+                child: const Icon(Icons.format_quote_rounded, size: 50, color: AppColors.welcomePurple)),
+          ),
           Container(
             padding: const EdgeInsets.all(5),
               decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(50),),color: Colors.white
               ),
-              child: const Icon(Icons.account_circle_outlined, size: 50, color: AppColors.welcomePurple)),
+              child: GestureDetector(
+                  onTap: (){
+                    Navigator.pushNamed(context, "UserAccountDetailsPage");
+                  },
+                  child: const Icon(Icons.account_circle_outlined, size: 50, color: AppColors.welcomePurple))),
         ],
       ),
     );

@@ -1,7 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shayri_app/utils/app_colors.dart';
 import 'package:shayri_app/utils/global_widget.dart';
 
 Widget shayariCard(context) {
@@ -14,6 +13,7 @@ Widget shayariCard(context) {
         gradient: RadialGradient(colors: [Colors.green, Colors.blue],),borderRadius: BorderRadius.all(Radius.circular(20))
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Center(
               child: reusableText(

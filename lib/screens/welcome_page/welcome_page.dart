@@ -56,7 +56,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       SizedBox(height: size.height * 0.05,),
                       GestureDetector(
                           onTap: () {
-                            Navigator.pushNamed(context, "DashboardPage");
+                            Navigator.pushNamed(context, "LoginSignupPage");
                           },
                           child: globalContainerBtn("Get Started",bgColor: Colors.red,width: size.width * 0.5,height: size.height * 0.06,))
                     ],)
