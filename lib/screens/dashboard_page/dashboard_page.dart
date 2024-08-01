@@ -4,7 +4,7 @@ import 'package:shayri_app/screens/app_ui/components/dashboard_bottom_bar/dashbo
 import 'package:shayri_app/utils/app_colors.dart';
 import 'package:shayri_app/utils/global_widget.dart';
 
-import '../app_ui/components/sidebar_page/sidebar.dart';
+import '../app_ui/components/sidebar/sidebar_page/sidebar.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -56,6 +56,7 @@ class _DashboardPageState extends State<DashboardPage> {
           child: Padding(
             padding: const EdgeInsets.only(left: 16.0, right: 16.0,top: 20),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 shayariCard(context),
                 SizedBox(height: size.height * 0.02,),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shayri_app/screens/dashboard_page/sidebar_widget.dart';
 import 'package:shayri_app/utils/global_widget.dart';
+
+import '../sidebar_widget/sidebar_widget.dart';
 
 class Sidebar extends StatefulWidget {
   const Sidebar({super.key});
@@ -19,10 +20,11 @@ class _SidebarState extends State<Sidebar> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           SizedBox(height: size.height * 0.02,),
           Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
             reusableText("Select your Interest",fontWeight: FontWeight.w600,fontSize: 28),
           GestureDetector(

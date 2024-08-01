@@ -14,6 +14,7 @@ Widget shayariCard(context) {
         gradient: RadialGradient(colors: [Colors.green, Colors.blue],),borderRadius: BorderRadius.all(Radius.circular(20))
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Center(
               child: reusableText(
