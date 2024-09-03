@@ -20,6 +20,7 @@ Widget sideBar(BuildContext context, {required IconData icon, required String te
       ],
     ),
     child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Container(
           padding: const EdgeInsets.all(8),

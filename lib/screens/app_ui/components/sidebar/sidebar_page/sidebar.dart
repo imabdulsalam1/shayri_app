@@ -20,10 +20,11 @@ class _SidebarState extends State<Sidebar> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           SizedBox(height: size.height * 0.02,),
           Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
             reusableText("Select your Interest",fontWeight: FontWeight.w600,fontSize: 28),
           GestureDetector(
